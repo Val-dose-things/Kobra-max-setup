@@ -14,23 +14,34 @@ Kobra max setup
 
 #update the start and end macros
 
-![image](https://github.com/user-attachments/assets/78f65fd6-c119-4e27-8748-a6c3cba1303f)
+![image](https://github.com/user-attachments/assets/15860b8a-7203-42d6-b5dc-80e95d4f8c93)
 
 Start print
 ```
+M104 S140;start the nozzle preheat and don't wait
+G90;absolute positioning
+M82;set extruder to absolute mode
 M355 S1 ;turn on the case light
 
 START_PRINT
 
+G92 E0.0 ; reset extruder
+G90
 G1 X0 Y-10 Z0.4 F6000.0
 G1 X40 Y-10 E45 F300.0
+G90
+G92 E0.0 ; reset extruder
 ```
+
 End print
 ```
+G92 E0.0 ; reset extruder
+
 END_PRINT
 
 M355 S0 ;turn off the case light
-
+G90;absolute positioning
+M82;set extruder to absolute mode
 SAVE_CONFIG
 ```
 
