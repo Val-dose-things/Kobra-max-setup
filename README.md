@@ -10,18 +10,43 @@ Kobra max setup
 
 ![image](https://github.com/user-attachments/assets/ff072211-a4d5-41db-82dd-cabd8c92e417)
 ![image](https://github.com/user-attachments/assets/fe55e9f6-5a4e-4fb4-8df3-1dcf0d83f285)
+![image](https://github.com/user-attachments/assets/781da1c1-3ff8-4473-8c4b-5a7ee1f09e02)
+
+#update the start and end macros
+
+![image](https://github.com/user-attachments/assets/78f65fd6-c119-4e27-8748-a6c3cba1303f)
+
+Start print
+```
+M355 S1 ;turn on the case light
+
+START_PRINT
+
+G1 X0 Y-10 Z0.4 F6000.0
+G1 X40 Y-10 E45 F300.0
+```
+End print
+```
+END_PRINT
+
+M355 S0 ;turn off the case light
+
+SAVE_CONFIG
+```
 
 # then add the moonraker
 
 ![Screenshot 2025-06-02 224051](https://github.com/user-attachments/assets/a548d12f-a714-4e35-94e7-b7b6a28832da)
 
-# Link: http://kobramax.local/
+# Link: 
+``` http://kobramax.local/ ```
 
 ![Screenshot 2025-06-02 224111](https://github.com/user-attachments/assets/35178177-2593-4cf2-bea9-ae9fea51fbee)
 ![Screenshot 2025-06-02 224204](https://github.com/user-attachments/assets/85c592fa-0a2f-4057-ab5b-4f405ecd14fc)
 ![Screenshot 2025-06-02 224231](https://github.com/user-attachments/assets/249b2344-20b7-49e2-bf05-f9e8d979d26c)
 
-# Link: http://kobramax.local/webcam/?action=stream
+# Link: 
+```http://kobramax.local/webcam/?action=stream ```
 
 # now add the profile
 ![image](https://github.com/user-attachments/assets/6a726b6d-96d6-4326-8dd1-542da321da8f)
@@ -30,7 +55,7 @@ Kobra max setup
 
 
 # to access the printer in a web browser go to:
-http://kobramax.local/
+```http://kobramax.local/```
 
 you well need to run a few things after the printer is setup. 
 
