@@ -18,7 +18,6 @@ Kobra max setup
 
 Start print
 ```
-M104 S140;start the nozzle preheat and don't wait
 G90;absolute positioning
 M82;set extruder to absolute mode
 M355 S1 ;turn on the case light
